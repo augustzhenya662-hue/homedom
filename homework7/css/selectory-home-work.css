@@ -1,0 +1,87 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+header {
+    background-color: #dbeaee;
+    min-height: 28vh;
+}
+.stars-group {
+    padding-top: 1%;
+    display: flex;
+    width: 35%;
+    gap: 1.2%;
+    margin: 0% auto;
+    margin-bottom: 1%;
+}
+.star:hover img {
+       content: url('../img/colored-diamond.png');
+    }
+nav {
+    width: 100%;
+    background-color: #464646;
+}
+ul  {
+    width: 98%;
+    list-style-type: none;
+    padding: 1%;
+    
+}
+li { 
+    display: inline-block;
+    margin: 0% auto;
+    margin-left: 5%;
+    margin-bottom: 0.5%;
+    padding: 1%;
+    width: 8%;
+    text-align: center;
+}
+li:hover {
+    color: #425c63;
+    background: #dbeaee;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+     font-family: 'Bitter', serif;
+     font-size: 1.1em;
+}
+#body {
+    margin: 0% auto;
+    width: 55%;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'Bitter', serif ;
+    font-size: 2.5em;
+    margin: 3.5% 0 3.5% 0;
+    
+}
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 2%;
+}
+div h2 ~ p {
+    background-color: #dbeaee;
+    font-weight: 900;
+    border-radius: 50%;
+    font-size: 2em;
+}
+div h2 ~ p:hover {
+    font-weight: 900;
+    color: #FFF;
+    background: #2874a6d7 ;
+    cursor: pointer;
+}
+footer {
+    margin-top: 5%;
+    background-color: #464646;
+    min-height: 7vh;
+  
+}

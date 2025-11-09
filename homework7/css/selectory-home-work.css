@@ -8,7 +8,7 @@ body, h1, h2, p {
 
 header {
     background-color: #dbeaee;
-    min-height: 28vh;
+    min-height: 23vh;
 }
 .stars-group {
     padding-top: 1%;
@@ -17,10 +17,14 @@ header {
     gap: 1.2%;
     margin: 0% auto;
     margin-bottom: 1%;
+    flex-direction: row-reverse;
 }
 .star:hover img {
        content: url('../img/colored-diamond.png');
     }
+.star:hover ~ .star img  {
+    content: url('../img/colored-diamond.png');
+ }
 nav {
     width: 100%;
     background-color: #464646;
@@ -28,14 +32,13 @@ nav {
 ul  {
     width: 98%;
     list-style-type: none;
-    padding: 1%;
+
     
 }
 li { 
     display: inline-block;
     margin: 0% auto;
     margin-left: 5%;
-    margin-bottom: 0.5%;
     padding: 1%;
     width: 8%;
     text-align: center;
@@ -43,6 +46,7 @@ li {
 li:hover {
     color: #425c63;
     background: #dbeaee;
+    background-size: 100%;   
 }
 
 a {
@@ -70,8 +74,8 @@ p {
 div h2 ~ p {
     background-color: #dbeaee;
     font-weight: 900;
-    border-radius: 50%;
-    font-size: 2em;
+    border-radius: 15px;
+    padding: 2%;
 }
 div h2 ~ p:hover {
     font-weight: 900;
@@ -82,6 +86,6 @@ div h2 ~ p:hover {
 footer {
     margin-top: 5%;
     background-color: #464646;
-    min-height: 7vh;
+    padding: 1%;
   
 }

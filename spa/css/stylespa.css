@@ -73,6 +73,7 @@ body, ul, p, h1, h2{
           background: none; 
         }
         header div {
+          box-sizing: border-box;
           display: block;
           text-align: center;
           margin: 0;

@@ -69,20 +69,29 @@ body, ul, p, h1, h2{
       background-color: #81aea52b;
     }
     @media screen and (max-width: 1200px){
-        header {background: none;}
-        header div{margin: 0% auto;}
-        
+        header {
+          background: none; 
+        }
+        header div {
+          display: block;
+          text-align: center;
+          margin: 0;
+          width:100%;
+          padding: 20px 0 20px 0;
+        }
     }
     @media screen and (max-width:840px){
       header div{width: 100%; display: block; text-align: center;}
-      article .description{width: 80%;}
-      div .description,.time,.price{
+      article .description{width: 80%; }
+      .time,.price{
         background-color: #81aea52b; 
         font-weight: bold; 
         font-size:20px;
-        width: 25%; 
+        width: 40%; 
         text-align: center;
-        padding-bottom: 2.5%;}
+        padding-bottom: 2%;
+       }
+
     }
      @media screen and (max-width:540px){
      div .description,.time,.price {display:block; width:80%;padding-bottom: 5%;}

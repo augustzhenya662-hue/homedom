@@ -26,15 +26,12 @@ header {
     content: url('../img/colored-diamond.png');
  }
 nav {
-    width: 100%;
+    display: flex;
     background-color: #464646;
-    overflow: hidden;
 }
 ul  {
     width: 98%;
     list-style-type: none;
-
-    
 }
 li { 
     display: inline-block;
@@ -98,7 +95,7 @@ footer {
     100% {content: url('../img/bell-solid-full.svg'); transform: rotate(-25deg);}
 }
 .bell { 
-    width: 1.5%; 
+    width: 25px; 
     position: absolute; 
     animation: bell 3s linear infinite;
     margin-left: -1.5%;
@@ -113,14 +110,16 @@ footer {
 }
 div .block {
     display: flex;
-    max-width: 100%;
-    margin: 0% auto;
     margin-top: 5%;
     gap: 5%;
-    
+    justify-content: center;
 }
 div .img {
+    justify-content: center;
     flex: 3 1 100px;
+}
+img {
+    width: 100%;
 }
 div .info {
     flex: 1 1 100px;
@@ -134,4 +133,28 @@ div .block:hover {
     transform: scale(1.2);
     transition: all 2s ease;
 
+}
+@media screen and (max-width:1200px) { 
+    div .block:nth-child(even) {
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+      
+    }
+   div .block:hover {
+    transform: none;
+   }
+   div .info {
+    padding: 0%;
+    font-size: 0.9em;
+   }
+}
+@media screen and (max-width:800px) {
+    div .block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        width: 500px;
+    }
 }

@@ -98,7 +98,8 @@ footer {
     width: 25px; 
     position: absolute; 
     animation: bell 3s linear infinite;
-    margin-left: -1.5%;
+    margin: 1% 0 0 -1%;
+    
     
 }
 .column {
@@ -132,9 +133,15 @@ div .block:nth-child(even) {
 div .block:hover {
     transform: scale(1.2);
     transition: all 2s ease;
-
+}
+.icon {
+    display: flex;
+    margin-left: 2%;
 }
 @media screen and (max-width:1200px) { 
+    .column {
+        width: 70%;
+    }
     div .block:nth-child(even) {
         flex-direction: row;
         display: flex;
@@ -156,5 +163,8 @@ div .block:hover {
     }
     img {
         width: 500px;
+    }
+    .stars-group {
+        display: none;
     }
 }

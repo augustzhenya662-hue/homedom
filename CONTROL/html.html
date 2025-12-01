@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: minmax( auto);
+    gap:50px;
+    margin-top: 20%;
+   }
+   .grid > div {
+      text-align: center;
+      background-image: url('../CONTROL/back.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+   div { 
+        border: rgb(66, 66, 66) solid 1px;
+   }
+   h1 {
+        padding-bottom: 10%;
+   }
+   div {
+         transition: transform 0.3s ease;
+   }
+   div:hover {
+         transform: scale(1.2);
+         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+   }
+</style>
+<body>
+    <conteiner class="grid">
+        <div>
+          <h1>Заголовок</h1>
+          <p1>Описание карточки с текстом</p1>
+        </div>
+        <div>
+           <h1>Заголовок</h1>
+           <p1 class="bottom">Описание карточки с текстом</p1>
+        </div>
+        <div>
+            <h1>Заголовок</h1>
+            <p1>Описание карточки с текстом</p1>
+        </div>
+        <div>
+            <h1>Заголовок</h1>
+            <p1>Описание карточки с текстом</p1>
+        </div>
+        <div>
+            <h1>Заголовок</h1>
+            <p1>Описание карточки с текстом</p1>
+        </div>
+        <div>
+           <h1>Заголовок</h1>
+           <p1>Описание карточки с текстом</p1>
+        </div>
+        <div>
+            <h1>Заголовок</h1>
+            <p1>Описание карточки с текстом</p1>
+        </div>
+        <div>
+            <h1>Заголовок</h1>
+            <p1>Описание карточки с текстом</p1>
+        </div>
+    </conteiner>
+</body>
+</html>
